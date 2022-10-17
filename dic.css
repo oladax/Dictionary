@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: orangered;
+    outline: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+body{
+    background-color: orangered;
+}
+/*/ the main container for centering the app/*/
+.container{
+    background-color:orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    height: 100%;
+}
+/*/this section encompasses input and button tags/*/
+
+.main-div{
+    background-color:   orangered;
+    height: 90vh;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px orangered, 20px 20px 30px orangered;
+    width: 602px;
+    margin-top: -90px;
+}
+
+input{
+    outline: none;
+    border: none;           
+    color: white;
+    width:196px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    background-color: transparent;
+    font-size: 18px;
+    font-style: italic; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input::placeholder{
+    color: white;
+    
+}
+/*/ this button styles is appliacble to all buttons in the app/*/
+button{
+    width: 110px;
+    text-align: center;
+    height: 43px;
+    border: none;
+    border-radius: 8px;
+    background-color: skyblue;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: inset 10px 10px 10px skyblue,inset 10px 10px 20px skyblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    margin-bottom: 11px; 
+    font-style: oblique;
+    cursor: pointer;
+    transition: 1s;
+}
+
+button:hover{
+    opacity: 0.9;
+    box-shadow:  10px 10px 20px orangered;
+    color: orangered;
+
+}
+button:active{
+    opacity: 0.9;
+    box-shadow:  10px 10px 20px orangered;
+    color: black;
+    background-color: skyblue;
+}
+
+
+
+/*/section basically for sound,sample and phonetic /*/
+/*/ the main container for sample,phonetic and word example/*/
+.section-div, .meanings{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    font-display: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.example{
+    display: flex;
+    justify-content: space-around;
+}
+.phonetic{
+    
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 3px; 
+}
+.sample{
+    font-size: 20px;
+    font-style: italic; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sample-div{
+    margin-top: 5px;
+    color: white;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+
+}
+/*/styles for designing the audio image/*/
+img{
+    width: 20px;
+    height: 20px;
+    margin-left: -47px;
+    object-fit: cover;
+    background-color: skyblue;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: inset 10px 10px 10px skyblue, inset 10px 10px 10px skyblue;  
+}
+img:hover{
+    opacity: 0.5;
+}
+
+
+/*/for styling the meanings of the value/*/
+
+.para1{
+ color: white;
+margin-top: 40px;
+text-align: center;
+font-family: math;
+font-size: 17px;
+font-style: revert;
+font-weight: bold;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.para2{
+    color: white;
+    margin-top: 33px;
+    text-align: center;
+    font-family: math;
+    font-size: 17px;
+    font-style: revert;
+    padding: 22px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+/*/styled paragraph for synonyyms and antonyms outputs/*/
+.para3{
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 17px;
+    font-style: revert;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+/*/ media query /*/
+@media  screen and (max-width:370px) {
+    
+
+    .main-div{
+        height: 100%;
+        background-color: blue;
+        border-radius: 10px;
+        box-shadow: 20px 20px 30px blue, 20px 20px 30px blue;}
+    
+        .container{
+            background-color: blue;
+            height: 100%;
+        }
+    }}

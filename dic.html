@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dic.css">
+    <title>Dictionary</title>
+</head>
+<body>
+    <header class="container">
+    <div class="main-div">
+        <!--this section encompasses input and button tags-->
+        <section class="sub-div">
+            <input type="text" id="input" placeholder="Type a word.." required>
+            <button onclick="btn();">Search</button> 
+        </section>   
+
+        <!--div for audio,sample and phonetic-->
+
+        <div class="section-div">
+
+             <div><p id="sample" class="sample">friend</p>
+                <div class="example">
+                    <div class="sample-div" id="speech">noun</div>
+                <div id="phonetic" class="phonetic">/fɹɛnd/</div> 
+                </div>
+            </div>
+
+                <p  ><img id="sound" src="./img.folder/high-volume.png" alt=""></p>
+            </div>
+       <!--div for holding paragraphs tags for the meanings of the value-->
+
+<div id="sub-para">
+            <!--paragraphs tags for the meanings of the value-->
+
+    <p class="para1" id="para1">A person other than a family member, spouse or lover whose company one enjoys and towards whom one feels affection.
+
+    </p>
+    <p class="para2" id="para2">John and I have been friends ever since we were roommates at college.&nbsp;&nbsp; Trust is important between friends.&nbsp;&nbsp; I used to find it hard to make friends when I was shy.
+
+    </p>
+           <!--paragraphs tags for synonyyms and antonyms outputs-->
+
+    <p id="p-synto" class="para3">buddy</p>
+    <p id="p-anto" class="para3">enemy</p>
+</div>
+<!--div for antonyms and synonyms buttons-->
+<div class="meanings">
+    <button id="ANTO">Antonyms</button>
+    <button id="SYNO">Synonyms</button>
+</div>
+           </div>
+    </header>
+    <script src="./dic.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+</body>
+</html>
