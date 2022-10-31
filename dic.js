@@ -52,7 +52,17 @@ function btn (){
 const audiosound = document.getElementById('sound')
 audiosound.onclick = () => {
 const audio = (sample.innerText )
-responsiveVoice.speak(audio)
+var speech = new SpeechSynthesisUtterance();
+
+    // defing speech properties
+    speech.lang =  "en-NG";
+    speech.text = audio;
+    speech.volume = 30;
+    speech.pitch = 1;
+    speech.rate = 1;
+
+
+    window.speechSynthesis.speak(speech)
 }
 
 
